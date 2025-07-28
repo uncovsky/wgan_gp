@@ -25,7 +25,19 @@ def load_validate_images(image_path):
         Reads the rgb/gray directories, comparing the number of images in
         each.
 
-        Also checks that every rgb image has a corresponding gray image.
+        Assumes the directory structure is as follows:
+        image_path/
+            img_rgb/
+                    <image1>.png
+                    <image2>.png
+                    ...
+            img_gray/
+                    <image1>.png
+                    <image2>.png
+                    ...
+
+        Also checks that every rgb image has a corresponding gray image (same
+        names).
 
         Returns a pd dataframe with rows corresponding to paths to rgb/gray
         datapoints.
@@ -79,6 +91,7 @@ class PlacesDataset(Dataset):
     def __init__(self, data):
         self.data = data
 
+        # No preprocessing except conversion to float32
         self.preprocess = v2.Compose([
             v2.ToImage(),
             v2.ToDtype(torch.float32, scale=True)
