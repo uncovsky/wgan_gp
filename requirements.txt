@@ -1,0 +1,11 @@
+albumentations==2.0.5
+numpy==2.0.2
+pandas==2.2.3
+torchinfo==1.8.0
+torchsummary==1.5.1
+torchview==0.2.6
+torchvision
+matplotlib
+scikit-image
+tqdm
+graphviz
