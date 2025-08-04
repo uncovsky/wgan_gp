@@ -1,5 +1,3 @@
-# STUDENT's UCO: 514479
-
 # Description:
 # This file should be used for performing training of a network
 # Usage: python training.py <dataset_path>
