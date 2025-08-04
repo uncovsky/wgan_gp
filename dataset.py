@@ -1,5 +1,3 @@
-# STUDENT's UCO: 514479
-
 # Description:
 # This file should contain custom dataset class. The class should subclass the torch.utils.data.Dataset.
 
