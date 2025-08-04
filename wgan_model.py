@@ -1,5 +1,3 @@
-# STUDENT's UCO: 514479
-
 import torch.nn.functional as F
 import torch.nn as nn
 
