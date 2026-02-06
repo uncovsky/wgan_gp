@@ -21,6 +21,4 @@ Training procedure:
 The model was evaluated on the Cityscapes dataset, see description [here](https://www.cityscapes-dataset.com/dataset-overview/). We were provided black-and-white inputs and synthetically colored images. 
 The pre-trained U-Net successfully colored the images with the correct brownish-red hue, but completely omitted the green and blue details on cars and signs. 
 While the WGAN training seemed to improve performance on some finer details, we didn't observe major improvements across the board. The model achieved an [SSIM](https://en.wikipedia.org/wiki/Structural_similarity_index_measure) score of 0.91 on a final (private) test dataset selected by the staff. We visualize predictions on selected inputs below.
-![prediction1](prediction1.png)
-![prediction1](prediction2.png)
 
